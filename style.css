@@ -1,0 +1,84 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 15px;
+}
+
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+h1 { text-align: center; color: #333; margin-bottom: 20px; }
+
+.input-row { display: flex; gap: 8px; margin-bottom: 15px; }
+
+#taskInput {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+#taskInput:focus { outline: none; border-color: #667eea; }
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+#addBtn { background: #667eea; color: #fff; padding: 10px 18px; }
+#addBtn:hover { background: #5568d3; }
+
+.filters { display: flex; justify-content: center; gap: 8px; margin-bottom: 15px; }
+.filter { background: #eee; padding: 6px 14px; color: #444; }
+.filter.active { background: #667eea; color: #fff; }
+
+ul { list-style: none; }
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+li span { flex: 1; word-break: break-word; cursor: pointer; }
+li.done span { text-decoration: line-through; color: #999; }
+
+li input[type="checkbox"] { width: 18px; height: 18px; }
+li input.edit-input { flex: 1; padding: 4px 6px; font-size: 16px; }
+
+.edit-btn { background: #f0ad4e; color: #fff; padding: 5px 10px; }
+.del-btn { background: #e74c3c; color: #fff; padding: 5px 10px; }
+
+.empty { text-align: center; color: #999; padding: 15px; display: none; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  color: #555;
+  font-size: 14px;
+}
+#clearBtn { background: #888; color: #fff; padding: 6px 12px; }
+#clearBtn:hover { background: #666; }
+
+@media (max-width: 400px) {
+  .container { padding: 16px; }
+}
