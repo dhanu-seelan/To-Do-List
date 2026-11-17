@@ -1,5 +1,10 @@
-Ex03 To-Do List using JavaScript
-Date:
+Ex03 To-Do List using JavaScript\
+Name : Danaseelan G
+
+Reg No : 212225040053
+
+Date: 17 - 11 -2026.
+
 AIM
 To create a To-do Application with all features using JavaScript.
 
